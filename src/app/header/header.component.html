@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <span class="logo">Appartoo test</span>
+  <button mat-button *ngIf="userObj && userObj.name" [routerLink]="[ '/', 'contacts']">Accueil</button>
+  <div class="profilebuttons">
+  <label  *ngIf="userObj && userObj.name">Bienvenue, {{userObj.name}}</label>
+  <label  *ngIf="userObj && userObj.name" (click)="logout()">Déconexion</label>
+</div>
+</mat-toolbar>

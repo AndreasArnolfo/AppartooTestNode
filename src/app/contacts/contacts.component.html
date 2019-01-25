@@ -1,0 +1,16 @@
+<mat-list>
+  <mat-list-item>
+    <img class="contact-avatar" src="https://s2.qwant.com/thumbr/0x380/f/1/98d58730b9134a91f389cfd723d1429f6a14ea29a3eff4bf0e810a2f96b918/marsupilami3.png?u=http%3A%2F%2F1.bp.blogspot.com%2F-RpUDITUWkpI%2FTYZSIwI1boI%2FAAAAAAAAGcQ%2FdfiskKd9ioM%2Fs1600%2Fmarsupilami3.png&q=0&b=1&p=0&a=1">
+    <mat-form-field class="full mynumber">
+      
+    </mat-form-field>
+    <button mat-fab [routerLink]="[ '/', 'contactadd']">
+      <mat-icon aria-label="icon-button with a heart icon">add</mat-icon>
+    </button>
+  </mat-list-item>
+  <h3 mat-subheader>Contacts</h3>
+  <mat-list-item [routerLink]="[ '/', 'contacts', contact._id ]" class="contact-item" *ngFor="let contact of contacts">
+    <img class="contact-avatar" src="http://cdn.onlinewebfonts.com/svg/img_383210.png">
+    <h4 mat-line class="contact-name">{{contact.name}}</h4>
+  </mat-list-item>
+</mat-list>

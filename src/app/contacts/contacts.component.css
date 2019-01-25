@@ -1,0 +1,28 @@
+.mat-list-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .example-header-image {
+    background-image: url('http://cdn.onlinewebfonts.com/svg/img_383210.png');
+    background-size: cover;
+  }
+  .contact-avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: absolute;
+  }
+  .contact-name{
+      padding-left: 50px !important;
+  }
+  .contact-item{
+      cursor: pointer;
+  }
+  .contact-item:hover {
+    background-color: #efebf7;
+}
+
+.mynumber{
+  margin-left: 50px;
+  top: 10px; 
+}
